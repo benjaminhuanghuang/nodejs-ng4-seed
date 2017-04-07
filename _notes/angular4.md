@@ -15,6 +15,8 @@
 
 # Using Angular 4 at client side
 
-- Create folder 'client'
-    - Create package.json in 
-
+    - Create folder 'client'
+    - Create package.json in client
+    - Create some js and json angular need
+    - Install package by running yarn in client folder
+    - Create "app" folder under client
