@@ -6,7 +6,6 @@ const ForkCheckerPlugin = require('awesome-typescript-loader').ForkCheckerPlugin
 
 module.exports = {
     entry: {
-        polyfills: './client/polyfills.ts',
         vendor: './client/vendor.ts',
         main: './client/main.ts',
     },

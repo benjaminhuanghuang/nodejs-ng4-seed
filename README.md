@@ -21,4 +21,5 @@
 
 
 ## Usage
-    $ nodemon
+    $ webpack    # build angular code
+    $ nodemon    # start server
