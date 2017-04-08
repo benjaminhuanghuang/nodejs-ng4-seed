@@ -60,7 +60,7 @@ module.exports = {
         main: './client/main.ts'
     },
     output: {
-        path: path.resolve(__dirname, '../client_dist/js'),
+        path: path.resolve(__dirname, '../client_dist/'),
         publicPath: '/client_dist/', //reference path in html
         filename: '[name].js'
     },
@@ -92,9 +92,8 @@ module.exports = {
                 //     use: 'css-loader'
                 // })
                 exclude: /node_modules/,
-                loaders: 'style-loader!css-loader!'
-                //loader: ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader?sourceMap' })
-                //  loader: 'raw-loader'
+                //loaders: 'style-loader!css-loader!'
+                loader: ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader' })
             },
             {
                 test: /\.(png|jpg|jpeg|gif|svg)$/,
