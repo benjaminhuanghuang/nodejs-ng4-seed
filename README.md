@@ -9,11 +9,16 @@
 
     - Angular 2 & NodeJS Tutorial - MEAN 2.0 Introduction
         - https://github.com/mschwarzmueller/angular2-nodejs/tree/seed-project
+    
+    - https://github.com/datatypevoid/vulgar
 
+    - WEBPACK: AN INTRODUCTION
+        - https://angular.io/docs/ts/latest/guide/webpack.html
+    
 ## Setup
     $ npm init
     $ npm install -g angular-cli@latest    
 
 
 ## Usage
-
+    $ nodemon

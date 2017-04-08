@@ -1,27 +1,14 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Angular Quickstart</title>
-    <base href="/">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      body {color:#369;font-family: Arial,Helvetica,sans-serif;}
-    </style>
-
-    <!-- Polyfills -->
-    <script src="node_modules/core-js/client/shim.min.js"></script>
-
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <script src="systemjs.config.js"></script>
-    <script>
-      System.import('main.js').catch(function(err){ console.error(err); });
-    </script>
-  </head>
-
-  <body>
-    <my-app>Loading AppComponent content here ...</my-app>
-  </body>
-
+    <title>Angular2 QuickStart</title>
+</head>
+<body>
+    <my-app></my-app>
+    <script src="js/polyfills.js"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>
