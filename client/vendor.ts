@@ -9,8 +9,8 @@ import '@angular/common';
 import '@angular/compiler';
 import '@angular/http';
 import '@angular/router';
-import 'es6-shim';
-import 'es6-promise';
+// import 'es6-shim';
+// import 'es6-promise';
 
 /** Evergreen browsers require these. **/
 import 'core-js/es6/reflect';
