@@ -27,3 +27,7 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 
 // RxJS
 import 'rxjs';
+
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
+
