@@ -4,38 +4,35 @@
   "private": true,
   "main": "server.js",
   "scripts": {
-    "build":"webpack --progress",
+    "build": "webpack --progress",
     "build:prod": "webpack -p --progress"
   },
   "dependencies": {
     "express": "^4.14.0",
     "body-parser": "^1.15.0",
-    "ejs":"^2.5.2",
-    "mongojs":"^2.4.0",
-
+    "ejs": "^2.5.2",
+    "mongojs": "^2.4.0",
     "cookie-parser": "^1.4.3"
   },
   "devDependencies": {
-    "tslint": "^5.0.0",
-    "ts-node": "~3.0.2",
-    "typescript": "~2.2.2",
-    "webpack": "^2.3.3",
-    "webpack-merge": "^4.0.1",
-    "extract-text-webpack-plugin": "^2.1.0",
-  
+    "angular2-template-loader": "^0.6.2",
     "awesome-typescript-loader": "^3.1.2",
     "css-loader": "^0.28.0",
+    "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.0",
     "html-loader": "^0.4.4",
     "json-loader": "^0.5.4",
     "raw-loader": "^0.5.1",
     "style-loader": "^0.16.1",
     "to-string-loader": "^1.1.5",
+    "ts-node": "~3.0.2",
+    "tslint": "^5.0.0",
+    "typescript": "~2.2.2",
     "url-loader": "^0.5.7",
-    "angular2-template-loader": "^0.6.0"
+    "webpack": "^2.3.3",
+    "webpack-merge": "^4.0.1"
   },
   "description": "Node.js + Angular 4 seed project",
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/benjaminhuanghuang/nodejs-ng4.git"

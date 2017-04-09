@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const helpers = require('./helpers');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ForkCheckerPlugin = require('awesome-typescript-loader').ForkCheckerPlugin;
 const extractCSS = new ExtractTextPlugin('vendor.css');
 /*
@@ -70,21 +71,17 @@ module.exports = {
     module: {
         rules: [{
                 test: /\.ts$/,
-                use: [{
-                        loader: 'awesome-typescript-loader',
-                        options: {
-                            configFileName: 'client/tsconfig.json'
-                        }
-                    },
-                    {
-                        loader: 'angular2-template-loader'
+                loaders: [{
+                    loader: 'awesome-typescript-loader',
+                    options: {
+                        configFileName: 'client/tsconfig.json'
                     }
-                ],
-                exclude: [/\.(spec|e2e)\.ts$/]
+                }, 
+                'angular2-template-loader']
             },
             {
                 test: /\.html$/,
-                use: 'html-loader?minimize=false'
+                loader: 'raw-loader'
             },
             {
                 test: /\.css$/,
@@ -93,7 +90,10 @@ module.exports = {
                 // })
                 exclude: /node_modules/,
                 //loaders: 'style-loader!css-loader!'
-                loader: ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader' })
+                loader: ExtractTextPlugin.extract({
+                    fallbackLoader: 'style-loader',
+                    loader: 'css-loader'
+                })
             },
             {
                 test: /\.(png|jpg|jpeg|gif|svg)$/,
@@ -102,6 +102,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin('styles.css')
+        new ExtractTextPlugin('styles.css'),
+        new HtmlWebpackPlugin()
     ]
 };

@@ -4,6 +4,8 @@
 ## Reference
     - MEAN App From Scratch - MongoDB, Express, Angular 2 & NodeJS
 
+    - https://github.com/AngularClass/angular2-webpack-starter
+
     - MEAN App with Angular 2 and the Angular CLI
         https://scotch.io/tutorials/mean-app-with-angular-2-and-the-angular-cli
 
